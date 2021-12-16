@@ -51,6 +51,39 @@ elif 'Volkswagen' in car_input['make']:
 else :
     car_input['model'] = st.selectbox('Please select the car model:', _models)
     
+
+    
+audi_bodys = ['Convertible', 'Coupe', 'Estate', 'Hatchback','Saloon', 'SUV']
+ford_bodys = ['Convertible', 'Coupe', 'Estate', 'Hatchback', 'MPV', 'Pickup', 'Saloon', 'SUV']
+mercedes_bodys = ['Convertible', 'Coupe', 'Estate', 'Hatchback', 'MPV', 'Saloon', 'SUV']
+nissan_bodys = ['Convertible', 'Coupe', 'Estate', 'Hatchback', 'MPV', 'Pickup', 'SUV']
+vauxhall_bodys = ['Convertible', 'Estate', 'Hatchback','Saloon', 'SUV']
+volkswagen_bodys = ['Convertible', 'Coupe', 'Estate', 'Hatchback', 'Saloon', 'SUV']
+_bodys = []
+
+if 'Audi' in car_input['make']:
+    car_input['body'] = st.selectbox('Please select the car model:', audi_bodys)
+    
+elif 'Ford' in car_input['make']:
+    car_input['body'] = st.selectbox('Please select the car model:', ford_bodys)
+
+elif 'Mercedes' in car_input['make']:
+    car_input['body'] = st.selectbox('Please select the car model:', mercedes_bodys)
+    
+elif 'Nissan' in car_input['make']:
+    car_input['body'] = st.selectbox('Please select the car model:', nissan_bodys)
+    
+elif 'Vauxhall' in car_input['make']:
+    car_input['body'] = st.selectbox('Please select the car model:', vauxhall_bodys)
+    
+elif 'Volkswagen' in car_input['make']:
+    car_input['body'] = st.selectbox('Please select the car model:', volkswagen_bodys)
+    
+else :
+    car_input['body'] = st.selectbox('Please select the car model:', _bodys)
+
+
+    
 car_year = ['2021', '2020', '2019', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010',
             '2009', '2008', '2007', '2006', '2005', 'Before 2005']
 car_input['year'] = st.selectbox('Please select the car year:', car_year)
@@ -71,4 +104,3 @@ ulez = ['Yes', 'No']
 car_input['ulez'] = st.radio('Is the car ULEZ compliant?', ulez)
 
 st.button("Price", key=None, help=None, on_click=None, args=None, kwargs=None)
-
