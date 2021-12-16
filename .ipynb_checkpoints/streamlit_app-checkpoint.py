@@ -8,7 +8,7 @@ car_input = {'make':'xyz',
 'model':'xyz',
 'year':'xyz',
 'mileage':'xyz',
-'BHP':'xyz',
+'bhp':'xyz',
 'transmission':'xyz',
 'fuel':'xyz',
 'owners':'xyz',
@@ -99,6 +99,8 @@ car_input['fuel'] = st.radio('What fuel does the car use?', car_fuel)
 car_input['engine'] = st.slider('What is the car engine size? (l)', min_value=0.0, max_value=9.0, step=0.1)
 
 car_input['owners'] = st.slider('How many owners has the car had?', min_value=0, max_value=100, step=1)
+
+car_input['bhp'] = st.slider('What is the car BHP?', min_value=0, max_value=1500, step=1)
     
 ulez = ['Yes', 'No']
 car_input['ulez'] = st.radio('Is the car ULEZ compliant?', ulez)
