@@ -52,5 +52,5 @@ else :
     car_input['model'] = st.selectbox('Please select the car model:', _models)
     
 ulez = ['Yes', 'No']
-car_input['ULEZ'] = st.radio('Please select the car make:', ulez)
+car_input['ULEZ'] = st.radio('Is the car ULEZ compliant:', ulez)
 
