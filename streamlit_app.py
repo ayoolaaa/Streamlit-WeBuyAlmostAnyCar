@@ -17,6 +17,6 @@ car_input = {'make':'xyz',
 'Engine':'xyz',
 }
 
-car_makes = ['Vauxhall', 'Nissan', 'Audi', 'Mercedes', 'Volkswagen', 'Ford']
+car_makes = ['Audi', 'Ford', 'Mercedes', 'Nissan', 'Vauxhall', 'Volkswagen', ]
 
-car_input['make'] = st.radio('Please select the car make:', car_makes)
+car_input['make'] = st.selectbox('Please select the car make:', car_makes)
