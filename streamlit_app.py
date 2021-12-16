@@ -55,4 +55,4 @@ else :
 ulez = ['Yes', 'No']
 car_input['ULEZ'] = st.radio('Is the car ULEZ compliant:', ulez)
 
-car_input['mileage'] = st.slider('Car mileage' , min_value=0, max_value=15000, value=500, step=10)
+car_input['mileage'] = st.slider('Car mileage' , min_value=0, max_value=300000, step=10)
