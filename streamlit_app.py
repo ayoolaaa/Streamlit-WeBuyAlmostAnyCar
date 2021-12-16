@@ -50,3 +50,7 @@ elif 'Volkswagen' in car_input['make']:
     
 else :
     car_input['model'] = st.selectbox('Please select the car model:', _models)
+    
+ulez = ['Yes', 'No']
+car_input['ULEZ'] = st.radio('Please select the car make:', ulez)
+
