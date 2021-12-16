@@ -51,7 +51,7 @@ elif 'Volkswagen' in car_input['make']:
 else :
     car_input['model'] = st.selectbox('Please select the car model:', _models)
     
-car_input['mileage'] = st.text_input('Enter car mileage:')
+car_input['mileage'] = st.text_input('Please enter the car mileage:')
 
 car_transmission = ['Automatic', 'Manual']
 car_input['transmission'] = st.radio('What transmission does the car have:', car_transmission)
@@ -63,3 +63,5 @@ car_input['owners'] = st.slider('How many owners has the car had', min_value=0, 
     
 ulez = ['Yes', 'No']
 car_input['ULEZ'] = st.radio('Is the car ULEZ compliant:', ulez)
+
+st.button("Price", key=None, help=None, on_click=None, args=None, kwargs=None)
