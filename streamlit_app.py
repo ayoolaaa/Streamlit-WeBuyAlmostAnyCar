@@ -13,8 +13,8 @@ car_input = {'make':'xyz',
 'fuel':'xyz',
 'owners':'xyz',
 'body':'xyz',
-'ULEZ':'xyz',
-'Engine':'xyz',
+'ulez':'xyz',
+'engine':'xyz',
 }
 
 car_makes = ['Audi', 'Ford', 'Mercedes', 'Nissan', 'Vauxhall', 'Volkswagen', '']
@@ -58,14 +58,18 @@ car_input['year'] = st.selectbox('Please select the car year:', car_year)
 car_input['mileage'] = st.text_input('Please enter the car mileage:')
 
 car_transmission = ['Automatic', 'Manual']
-car_input['transmission'] = st.radio('What transmission does the car have:', car_transmission)
+car_input['transmission'] = st.radio('What transmission does the car have?', car_transmission)
 
 car_fuel = ['Petrol', 'Diesel']
-car_input['fuel'] = st.radio('What fuel does the car use:', car_fuel)
+car_input['fuel'] = st.radio('What fuel does the car use?', car_fuel)
 
-car_input['owners'] = st.slider('How many owners has the car had', min_value=0, max_value=100, step=1)
+car_input['engine'] = st.slider('What is the car engine size? (L)', min_value=0, max_value=9, step=0.1)
+
+car_input['owners'] = st.slider('How many owners has the car had?', min_value=0, max_value=100, step=1)
     
 ulez = ['Yes', 'No']
-car_input['ULEZ'] = st.radio('Is the car ULEZ compliant:', ulez)
+car_input['ulez'] = st.radio('Is the car ULEZ compliant?', ulez)
 
 st.button("Price", key=None, help=None, on_click=None, args=None, kwargs=None)
+
+jjbhbb hb
