@@ -18,6 +18,7 @@ car_input = {'make':'xyz',
 }
 
 car_makes = ['Audi', 'Ford', 'Mercedes', 'Nissan', 'Vauxhall', 'Volkswagen', '']
+car_input['make'] = st.selectbox('Please select the car make:', car_makes)
 
 audi_models = ['A1', 'A3', 'A4', 'A5', 'A6', 'Q2', 'Q3', 'Q5', 'Q7', 'S3', 'TT']
 ford_models = ['B-Max', 'C-Max', 'Edge', 'Fiesta', 'Focus', 'Fusion', 'Galaxy', 'Grand C-Max', 'KA', 'KA Plus',
@@ -28,8 +29,6 @@ nissan_models = ['370Z', 'Elgrand', 'Juke', 'Micra', 'Navara', 'Pixo', 'Qashqai'
 vauxhall_models = ['Adam', 'Astra', 'Corsa', 'Crossland X', 'Grandland X', 'Insignia', 'Mokka', 'Non-Franchise C']
 volkswagen_models = ['Beetle', 'Golf', 'Passat', 'Polo', 'Scirocco', 'T-Roc', 'Tiguan', 'Up']
 _models = []
-
-car_input['make'] = st.selectbox('Please select the car make:', car_makes)
 
 if 'Audi' in car_input['make']:
     car_input['model'] = st.selectbox('Please select the car model:', audi_models)
@@ -53,6 +52,14 @@ else :
     car_input['model'] = st.selectbox('Please select the car model:', _models)
     
 car_input['mileage'] = st.text_input('Enter car mileage:')
+
+car_transmission = ['Automatic', 'Manual']
+car_input['transmission'] = st.radio('What transmission does the car have:', car_transmission)
+
+car_fuel = ['Petrol', 'Diesel']
+car_input['fuel'] = st.radio('What fuel does the car use:', car_fuel)
+
+car_input['owners'] = st.slider('How many owners has the car had', min_value=0, max_value=100, step=1)
     
 ulez = ['Yes', 'No']
 car_input['ULEZ'] = st.radio('Is the car ULEZ compliant:', ulez)
