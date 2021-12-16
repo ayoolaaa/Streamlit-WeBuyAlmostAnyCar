@@ -63,7 +63,7 @@ car_input['transmission'] = st.radio('What transmission does the car have?', car
 car_fuel = ['Petrol', 'Diesel']
 car_input['fuel'] = st.radio('What fuel does the car use?', car_fuel)
 
-car_input['engine'] = st.slider('What is the car engine size?', min_value=0.0, max_value=9.0, step=0.1)
+car_input['engine'] = st.slider('What is the car engine size? (l)', min_value=0.0, max_value=9.0, step=0.1)
 
 car_input['owners'] = st.slider('How many owners has the car had?', min_value=0, max_value=100, step=1)
     
