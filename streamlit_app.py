@@ -22,7 +22,8 @@ car_makes = ['Audi', 'Ford', 'Mercedes', 'Nissan', 'Vauxhall', 'Volkswagen', '']
 audi_models = ['A1', 'A3', 'A4', 'A5', 'A6', 'Q2', 'Q3', 'Q5', 'Q7', 'S3', 'TT']
 ford_models = ['B-Max', 'C-Max', 'Edge', 'Fiesta', 'Focus', 'Fusion', 'Galaxy', 'Grand C-Max', 'KA', 'KA Plus',
               'Kuga', 'Mondeo', 'Mustang', 'Puma', 'Ranger', 'S-Max', 'Transit', 'Transit Custom']
-mercedes_models = []
+mercedes_models = ['A_Class', 'B_Class', 'C_Class', 'CLA_Class', 'E_Class', 'GLA_Class', 'GLC_Class', 'GLE_Class',
+                   'S_Class']
 nissan_models = []
 vauxhall_models = []
 volkswagen_models = []
@@ -54,3 +55,4 @@ else :
 ulez = ['Yes', 'No']
 car_input['ULEZ'] = st.radio('Is the car ULEZ compliant:', ulez)
 
+car_input['mileage'] = st.slider('Car mileage' , min_value=0, max_value=15000, value=500, step=10)
