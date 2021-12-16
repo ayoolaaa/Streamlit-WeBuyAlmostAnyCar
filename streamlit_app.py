@@ -26,7 +26,7 @@ mercedes_models = ['A Class', 'B Class', 'C Class', 'CLA Class', 'E Class', 'GLA
                    'S Class']
 nissan_models = ['370Z', 'Elgrand', 'Juke', 'Micra', 'Navara', 'Pixo', 'Qashqai', 'X-trail']
 vauxhall_models = ['Adam', 'Astra', 'Corsa', 'Crossland X', 'Grandland X', 'Insignia', 'Mokka', 'Non-Franchise C']
-volkswagen_models = ['Beetle', 'Golf', 'Passat', 'Polo', 'Scirocco', 'T-Roc', 'Tiguan']
+volkswagen_models = ['Beetle', 'Golf', 'Passat', 'Polo', 'Scirocco', 'T-Roc', 'Tiguan', 'Up']
 _models = []
 
 car_input['make'] = st.selectbox('Please select the car make:', car_makes)
